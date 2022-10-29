@@ -3,7 +3,10 @@ package collections;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * set
@@ -21,5 +24,55 @@ public class set {
 
         System.out.println("Exiba a maior nota: "+ Collections.max(notas));
 
+        Iterator<Double> iterator = notas.iterator();
+        Double soma = 0.0;
+        while (iterator.hasNext()) {
+            Double next = iterator.next();
+            soma += next;
+        }
+        
+        System.out.println("Exiba a soma das  notas: " + soma);
+
+        System.out.println("Exiba a média das  notas: " +(soma / notas.size()));
+
+        notas.remove(0.0);
+        System.out.println("Remova a nota Zero " + notas);
+       
+       
+        Iterator<Double> iterator1 = notas.iterator();
+        while (iterator1.hasNext()) {
+            Double next = iterator1.next();
+            if (next < 7) iterator1.remove();
+        }
+        System.out.println("Remova as notas menores que 7 " + notas);
+        
+        
+        System.out.println("Exiba todas as notas na ordem em que foram informados: ");
+        Set<Double> notas2 = new LinkedHashSet<>();     
+        notas2.add(7d);
+        notas2.add(8.5);
+        notas2.add(9.3);
+        notas2.add(5d);
+        notas2.add(7d);
+        notas2.add(0d);
+        notas2.add(3.6);   
+        System.out.println(notas2);
+   
+   
+        System.out.println("Exiba todas as notas na ordem crescente: ");
+        Set<Double> notas3 = new TreeSet<>(notas2);
+        System.out.println(notas3);
+
+        System.out.println("Apague todos o conjunto");
+        notas.clear();
+
+        System.out.println("Confira se o conjuto está vazio: " + notas.isEmpty());
+        System.out.println("Confira se o conjuto 2 está vazio: " + notas2.isEmpty());
+        System.out.println("Confira se o conjuto 3 está vazio: " + notas3.isEmpty());
+
+
+
+
+   
     }
 }
