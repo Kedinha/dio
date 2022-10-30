@@ -1,8 +1,9 @@
 package collections;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Serie {
+public class Serie implements Comparable <Serie> {
 
     private String nome;
     private String genero;
@@ -54,4 +55,25 @@ public class Serie {
         return Objects.hash(nome, genero, tempoEpisodio);
     }
 
+    @Override
+    public int compareTo(Serie serie) {
+        int tempoEpisodio = Integer.compare(this.getTempoEpisodio(), serie.getTempoEpisodio());
+        if (tempoEpisodio != 0) return tempoEpisodio;
+        return this.getGenero().compareTo(serie.getGenero());
+        
+    }
+}
+
+class ComparatorNomeGeneroTempoEpisodio implements Comparator<Serie>{
+
+    @Override
+    public int compare(Serie s1, Serie s2) {
+       int nome = s1.getNome().compareTo(s2.getNome());
+        if (nome != 0) return nome;
+
+       int genero = s1.getGenero().compareTo(s2.getGenero());
+        if (genero != 0) return genero;
+
+        return Integer.compare(s1.getTempoEpisodio(), s2.getTempoEpisodio());
+    }
 }
