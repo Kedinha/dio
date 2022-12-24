@@ -22,7 +22,7 @@ public class MyClass {
 	//public double dividir(int dividendo, int divisor) throws Exception{}
 	
 	// este método não pode ser visto por outras classes no projeto
-	private void metodoPrivado(){}
+	//private void metodoPrivado(){}
 	
 	//alguns equívocos estruturais
 	public void validar(){
