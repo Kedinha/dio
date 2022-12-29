@@ -6,7 +6,7 @@ calcule e mostre a quantidade de números pares
 e a quantidade de números impares.
 */
 
-public class Exerc_4_ParImpar {
+public class Exerc4_ParImpar {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
