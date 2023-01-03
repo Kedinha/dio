@@ -16,6 +16,11 @@ public class RodarAplicacao {
         //DOWNCAST evitar aplicar esse conceito
         //Gerente gerente_ = new Funcionario(); * DOWN ERRADO
         // Vendedor vendedor_ = (Vendedor) new Funcionario();
+
+        System.out.println(funcionario);
+        System.out.println(gerente);
+        System.out.println(vendedor);
+        System.out.println(faxineiro);
         
     }
 }
