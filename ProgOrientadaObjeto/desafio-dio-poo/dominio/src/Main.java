@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 
+import edu.kedma.desafio.dominio.Conteudo;
 import edu.kedma.desafio.dominio.Curso;
 import edu.kedma.desafio.dominio.Mentoria;
 
@@ -16,7 +17,8 @@ public class Main {
         curso2.setDescricao("descrição do curso de JS");
         curso2.setCargaHoraria(4);
                 
-        
+        Conteudo conteudo = new Curso();
+        Conteudo conteudo1 = new Mentoria();
         
         
         Mentoria mentoria = new Mentoria();

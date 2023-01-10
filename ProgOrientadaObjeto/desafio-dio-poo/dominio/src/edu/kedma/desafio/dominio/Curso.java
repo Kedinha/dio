@@ -1,30 +1,18 @@
 package edu.kedma.desafio.dominio;
 
-public class Curso {
+public class Curso extends Conteudo {
     
-    private String descricao;
-    private String titulo;
+
     private int cargaHoraria;
+    
+    
+    @Override
+    public double calcularXP() {
+        return XP_PADRAO * cargaHoraria;
+    }
 
-
+    
     public Curso() {
-    }
-
-
-    public String getDescricao() {
-        return this.descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public String getTitulo() {
-        return this.titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
     }
 
     public int getCargaHoraria() {
