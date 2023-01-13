@@ -22,13 +22,16 @@ public class Dev {
             this.conteudosConcluidos.add(conteudo.get());
             this.conteudosInscritos.remove(conteudo.get());
         }else {
-            System.out.println("Você não está matriculadoem nenhum conteúdo");
+            System.err.println("Você não está matriculado em nenhum conteúdo");
         }
 
     }
 
     public double calcularTotalXP() {
-        return this.conteudosConcluidos.stream().mapToDouble(conteudo -> conteudo.calcularXP()).sum();
+        return this.conteudosConcluidos
+        .stream()
+        .mapToDouble(Conteudo::calcularXP)
+        .sum();
         
     }
 

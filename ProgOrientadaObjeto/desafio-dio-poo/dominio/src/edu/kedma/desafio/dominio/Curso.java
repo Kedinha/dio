@@ -1,17 +1,14 @@
 package edu.kedma.desafio.dominio;
 
 public class Curso extends Conteudo {
-    
 
     private int cargaHoraria;
-    
-    
+
     @Override
     public double calcularXP() {
         return XP_PADRAO * cargaHoraria;
     }
 
-    
     public Curso() {
     }
 
@@ -25,11 +22,11 @@ public class Curso extends Conteudo {
 
     @Override
     public String toString() {
-        return "{" +
-            " descricao='" + getDescricao() + "'" +
-            ", titulo='" + getTitulo() + "'" +
-            ", cargaHoraria='" + getCargaHoraria() + "'" +
-            "}";
+        return "\n{" +
+                " titulo='" + getTitulo() + "'" +
+                "\n descricao='" + getDescricao() + "'" +
+                "\n cargaHoraria='" + getCargaHoraria() + "'" +
+                "}";
     }
-    
+
 }

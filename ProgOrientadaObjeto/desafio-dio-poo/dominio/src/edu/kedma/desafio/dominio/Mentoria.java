@@ -24,10 +24,10 @@ public class Mentoria extends Conteudo {
 
     @Override
     public String toString() {
-        return "{" +
+        return "\n{" +
                 " titulo='" + getTitulo() + "'" +
-                ", descricao='" + getDescricao() + "'" +
-                ", data='" + getData() + "'" +
+                "\n descricao='" + getDescricao() + "'" +
+                "\n data='" + getData() + "'" +
                 "}";
     }
 
