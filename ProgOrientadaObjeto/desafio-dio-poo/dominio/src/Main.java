@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 
 import edu.kedma.desafio.dominio.Bootcamp;
-import edu.kedma.desafio.dominio.Conteudo;
+// import edu.kedma.desafio.dominio.Conteudo;
 import edu.kedma.desafio.dominio.Curso;
 import edu.kedma.desafio.dominio.Dev;
 import edu.kedma.desafio.dominio.Mentoria;
@@ -19,8 +19,8 @@ public class Main {
         curso2.setDescricao("descrição do curso de JS");
         curso2.setCargaHoraria(4);
                 
-        Conteudo conteudo = new Curso();
-        Conteudo conteudo1 = new Mentoria();
+        // Conteudo conteudo = new Curso();
+        // Conteudo conteudo1 = new Mentoria();
         
         
         Mentoria mentoria = new Mentoria();
@@ -38,8 +38,7 @@ public class Main {
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
-        bootcamp.getConteudos().add(conteudo);
-        bootcamp.getConteudos().add(conteudo1);
+        
 
 
         Dev devKedma = new Dev();
