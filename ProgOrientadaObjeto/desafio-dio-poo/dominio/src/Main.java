@@ -38,6 +38,8 @@ public class Main {
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
+        bootcamp.getConteudos().add(conteudo);
+        bootcamp.getConteudos().add(conteudo1);
 
 
         Dev devKedma = new Dev();
