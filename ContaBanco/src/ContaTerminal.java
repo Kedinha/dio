@@ -24,7 +24,7 @@ public class ContaTerminal {
      */
     public static void main(String[] args) throws Exception {
 
-        // TODO:"Conhecer e importar a classe Scanner"
+        // TODO: "Conhecer e importar a classe Scanner"
 
         Scanner scanner = new Scanner(System.in);
 
@@ -37,16 +37,14 @@ public class ContaTerminal {
         int numeroAgencia = scanner.nextInt();
         System.out.println("Agencia: " + numeroAgencia);
 
-        System.out.print("Por favor, digite o número da Conta!\n");
-        String numeroConta = scanner.nextLine();
-        System.out.println("Conta: " + numeroConta);
+        String numeroConta = "1244-5";
+        System.out.print("Número da Conta: " + numeroConta);
 
         double saldo = 2.100;
-        System.out.println("Saldo: $" + saldo);
-        System.out.print("Criando sua conta ...\n");
+        System.out.print("\nCriando sua conta...\n");
 
         System.out.println("Olá " + usuario + ", obrigado por criar uma conta em nosso banco, sua Agência é: "
-                + numeroAgencia + ", Conta: nº" + numeroConta + "e seu saldo é ");
+                + numeroAgencia + ", Conta nº: " + numeroConta + " e seu saldo é R$" + saldo);
 
         // Exibir a mensagem da conta criada
         scanner.close();
