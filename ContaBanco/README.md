@@ -1,8 +1,8 @@
-## Getting Started
+## Conta Banco
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Criar um projeto Conta Banco que receberá dados via terminal contendo:
 
-## Folder Structure
+## Conta Terminal
 
 The workspace contains two folders by default, where:
 
