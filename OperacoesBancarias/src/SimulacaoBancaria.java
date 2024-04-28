@@ -6,7 +6,7 @@ public class SimulacaoBancaria {
         Scanner scanner = new Scanner(System.in);
 
         double saldo = 0;
-        double saque = 0;
+        double saque;
         // Loop infinito para manter o programa em execução até que o usuário decida
         // sair
         System.out.println("Escolha uma opcao");
@@ -22,13 +22,12 @@ public class SimulacaoBancaria {
             // pelo usuário.
 
             switch (opcao) {
-                // case 0:
-
-                // System.out.println("Programa encerrado.");
-                // break;
+                case 0:
+                    System.out.println("Programa encerrado.");
+                    scanner.close();
+                    break;
 
                 case 1:
-                    // System.out.println("1.Depositar");
                     System.out.println("Digite o valor a ser depositado");
                     saldo = scanner.nextDouble();
                     break;
@@ -57,7 +56,6 @@ public class SimulacaoBancaria {
                 case 4:
 
                     System.out.println("Programa encerrado.");
-
                     break;
 
                 // Exibe mensagem de opção inválida se o usuário escolher uma opção inválida:
@@ -65,7 +63,6 @@ public class SimulacaoBancaria {
                     System.out.println("Opção inválida. Tente novamente.");
             }
 
-            // scanner.close();
         }
     }
 }
